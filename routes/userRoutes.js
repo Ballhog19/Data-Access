@@ -9,8 +9,8 @@ router
 
 router
     .route('/:id')
-    .get(userController.getCustomersByID)
-    .patch(userController.patchCustomersById)
+    .get(userController.getCustomerByID)
+    .patch(userController.patchCustomerById)
     .delete(userController.deleteCustomerByID);
     
 module.exports = router;
